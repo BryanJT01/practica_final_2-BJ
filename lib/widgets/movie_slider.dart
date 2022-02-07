@@ -3,9 +3,8 @@ import 'package:practica_final_2/models/models.dart';
 
 class MovieSlider extends StatelessWidget {
   final List<Movie> movies;
-  const MovieSlider(String titulo, {Key? key, required this.movies}) : super(key: key);
+  const MovieSlider({Key? key, required this.movies}) : super(key: key);
 
-  String get titulo => titulo;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +16,7 @@ class MovieSlider extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Text(titulo,
+            child: Text('Populares',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           ),
           SizedBox(
