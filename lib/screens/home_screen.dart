@@ -31,9 +31,7 @@ class HomeScreen extends StatelessWidget {
               CardSwiper(movies: moviesProvider.onDisplayMovies), //Muestra la lista de imagenes principal con las peliculas en cartelerar
               
               // Slider de pel·licules
-              MovieSlider('Populares' ,movies: moviesProvider.popularMovie), //Muestra mas abajo otra lista de peliculas con las peliculas famosas
-              //Divider(),
-              //MovieSlider('En cines' ,movies: moviesProvider.onDisplayMovies)
+              MovieSlider(movies: moviesProvider.popularMovie), //Muestra mas abajo otra lista de peliculas con las peliculas famosas
               // Poodeu fer la prova d'afegir-ne uns quants, veureu com cada llista és independent
               // MovieSlider(),
               // MovieSlider(),
